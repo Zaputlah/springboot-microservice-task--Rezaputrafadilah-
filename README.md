@@ -1,6 +1,6 @@
 # Simple Book Management Microservice
 
-<table> <tr> <td align="center"><b>Step</b></td> <td align="center"><b>Perintah / Link</b></td> </tr> <tr> <td>Clone Repository</td> <td><code>git clone &lt;repo-url&gt;</code></td> </tr> <tr> <td>Jalankan Aplikasi</td> <td><code>mvn spring-boot:run</code></td> </tr> <tr> <td>Swagger UI</td> <td><a href="http://localhost:8081/swagger-ui/index.html">http://localhost:808a/swagger-ui/index.html</a></td> </tr> <tr> <td>Swagger UI</td> <td><a href="[https://www.postman.com/cryosat-technologist-82314506/workspace/my-workspace/collection/29178897-3659d1f4-a5a2-4cba-a41d-d545ea9fb370?action=share&creator=29178897]"></a></td> </tr> </table>
+<table> <tr> <td align="center"><b>Step</b></td> <td align="center"><b>Perintah / Link</b></td> </tr> <tr> <td>Clone Repository</td> <td><code>git clone &lt;repo-url&gt;</code></td> </tr> <tr> <td>Jalankan Aplikasi</td> <td><code>mvn spring-boot:run</code></td> </tr> <tr> <td>Swagger UI</td> <td><a href="http://localhost:8081/swagger-ui/index.html">http://localhost:808a/swagger-ui/index.html</a></td> </tr> <tr> <td>Swagger UI</td> <td><a href="[https://www.postman.com/cryosat-technologist-82314506/workspace/my-workspace/collection/29178897-3659d1f4-a5a2-4cba-a41d-d545ea9fb370?action=share&creator=29178897]">[https://www.postman.com/cryosat-technologist-82314506/workspace/my-workspace/collection/29178897-3659d1f4-a5a2-4cba-a41d-d545ea9fb370?action=share&creator=29178897]</a></td> </tr> </table>
 How to Run the Project
 
 1️⃣ Prerequisites
