@@ -57,6 +57,7 @@ spring:
 ## 🏗️ Database Design
 ## 📊 ER Diagram
 # text
+```sql
 +----------------------+
 |        BOOKS         |
 +----------------------+
@@ -66,6 +67,7 @@ spring:
 | isbn : VARCHAR (UQ)  |
 | published_date : DATE|
 +----------------------+
+```
 ## ⚖️ Validation & Business Rules
 - ✅ All fields are required for CREATE & PUT operations
 - ✅ ISBN must be unique across all books
