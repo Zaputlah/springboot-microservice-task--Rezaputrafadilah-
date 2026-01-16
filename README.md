@@ -135,57 +135,236 @@ spring:
 }
 ```
 
-## 📊 Test Results Gallery
+## 📸 Postman Test Results
 
-### Postman Results
+### ➕ CREATE Operations (POST /api/books)
 
 <div align="center">
   <table>
     <tr>
-      <td colspan="3" align="center"><b>CREATE Operations</b></td>
+      <td align="center"><b>Response Berhasil Create</b></td>
+      <td align="center"><b>Response Gagal - Author</b></td>
+      <td align="center"><b>Response Gagal - Date</b></td>
     </tr>
     <tr>
-      <td><img src="doc/postman/Response_BerhasilCreate.png" width="180" /></td>
-      <td><img src="doc/postman/Response_GagalAuthor.png" width="180" /></td>
-      <td><img src="doc/postman/Response_GagalDate.png" width="180" /></td>
+      <td><img src="doc/postman/Response_BerhasilCreate.png" alt="Success Create Book" width="280" /></td>
+      <td><img src="doc/postman/Response_GagalAuthor.png" alt="Failed - Invalid Author" width="280" /></td>
+      <td><img src="doc/postman/Response_GagalDate.png" alt="Failed - Invalid Date" width="280" /></td>
     </tr>
     <tr>
-      <td>Success</td>
-      <td>Invalid Author</td>
-      <td>Invalid Date</td>
-    </tr>
-  </table>
-  
-  <table>
-    <tr>
-      <td colspan="2" align="center"><b>READ Operations</b></td>
+      <td align="center"><b>Response Gagal - Double ISBN</b></td>
+      <td align="center"><b>Response Gagal - Title</b></td>
+      <td align="center"><b>Response Gagal - ISBN</b></td>
     </tr>
     <tr>
-      <td><img src="doc/postman/Response_AllBook.png" width="250" /></td>
-      <td><img src="doc/postman/Response_BerhasilBookById.png" width="250" /></td>
-    </tr>
-    <tr>
-      <td>Get All Books</td>
-      <td>Get by ID</td>
+      <td><img src="doc/postman/Response_GagalDoubleISBN.png" alt="Failed - Duplicate ISBN" width="280" /></td>
+      <td><img src="doc/postman/Response_GagalTitle.png" alt="Failed - Empty Title" width="280" /></td>
+      <td><img src="doc/postman/Response_GagalISBN.png" alt="Failed - Invalid ISBN" width="280" /></td>
     </tr>
   </table>
 </div>
 
-### Swagger UI Results
+### 🔍 READ Operations (GET /api/books)
 
 <div align="center">
   <table>
     <tr>
-      <td><img src="doc/swagger/Response_AllBook.png" width="200" /></td>
-      <td><img src="doc/swagger/Response_CreateBook.png" width="200" /></td>
-      <td><img src="doc/swagger/Response_UpdateByField.png" width="200" /></td>
+      <td align="center"><b>Response All Book</b></td>
+      <td align="center"><b>Response Berhasil Book By ID</b></td>
+      <td align="center"><b>Response Gagal Book By ID</b></td>
     </tr>
     <tr>
-      <td>GET All</td>
-      <td>POST Create</td>
-      <td>PATCH Update</td>
+      <td><img src="doc/postman/Response_AllBook.png" alt="Get All Books" width="280" /></td>
+      <td><img src="doc/postman/Response_BerhasilBookById.png" alt="Success - Get by ID" width="280" /></td>
+      <td><img src="doc/postman/Response_GagalBookById.png" alt="Failed - Book Not Found" width="280" /></td>
     </tr>
   </table>
+</div>
+
+### ✏️ UPDATE Operations
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>PUT - Response Berhasil Update</b></td>
+      <td align="center"><b>PATCH - Response Berhasil Update By Field</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/postman/Response_BerhasilUpdate.png" alt="PUT Full Update" width="400" /></td>
+      <td><img src="doc/postman/Response_BerhasilUpdateByField.png" alt="PATCH Partial Update" width="400" /></td>
+    </tr>
+  </table>
+</div>
+
+### 🗑️ DELETE Operation (DELETE /api/books/{id})
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Response Berhasil Delete</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/postman/Response_BerhasilDelete.png" alt="DELETE - Remove Book" width="400" /></td>
+    </tr>
+  </table>
+</div>
+
+## 📘 Swagger UI Test Results
+
+### 🔍 GET Operations
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Response All Book</b></td>
+      <td align="center"><b>Response Get By Id</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/swagger/Response_AllBook.png" alt="Swagger - Get All Books" width="350" /></td>
+      <td><img src="doc/swagger/Response_GetById.png" alt="Swagger - Get Book by ID" width="350" /></td>
+    </tr>
+  </table>
+</div>
+
+### ➕ POST Operation (Create)
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Response Create Book</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/swagger/Response_CreateBook.png" alt="Swagger - Create New Book" width="400" /></td>
+    </tr>
+  </table>
+</div>
+
+### ✏️ UPDATE Operations
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>PATCH - Response Update By Field</b></td>
+      <td align="center"><b>PUT - Response Update</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/swagger/Response_UpdateByField.png" alt="Swagger - PATCH Partial Update" width="350" /></td>
+      <td><img src="doc/swagger/Response_Update.png" alt="Swagger - PUT Full Update" width="350" /></td>
+    </tr>
+  </table>
+</div>
+
+### 🗑️ DELETE Operation
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Response Delete Book</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/swagger/Response_DeleteBook.png" alt="Swagger - DELETE Book" width="400" /></td>
+    </tr>
+  </table>
+</div>
+
+## 📊 API Testing Summary Table
+
+<div align="center">
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+    <tr style="background-color: #f2f2f2;">
+      <th align="center" width="150">Operation</th>
+      <th align="center" width="250">Endpoint</th>
+      <th align="center" width="300">Test Cases</th>
+      <th align="center" width="100">Status</th>
+      <th align="center" width="100">Images</th>
+    </tr>
+    <tr>
+      <td align="center"><b>CREATE</b></td>
+      <td align="center">POST /api/books</td>
+      <td>
+        • Success create book ✓<br>
+        • Invalid author (contains numbers) ✗<br>
+        • Invalid date format ✗<br>
+        • Duplicate ISBN ✗<br>
+        • Empty title ✗<br>
+        • Invalid ISBN format ✗
+      </td>
+      <td align="center" style="color: green;">✅ 6/6</td>
+      <td align="center">6 images</td>
+    </tr>
+    <tr>
+      <td align="center"><b>READ ALL</b></td>
+      <td align="center">GET /api/books</td>
+      <td>• Get all books successfully ✓</td>
+      <td align="center" style="color: green;">✅ 1/1</td>
+      <td align="center">1 image</td>
+    </tr>
+    <tr>
+      <td align="center"><b>READ BY ID</b></td>
+      <td align="center">GET /api/books/{id}</td>
+      <td>
+        • Get book by valid ID ✓<br>
+        • Book not found ✗
+      </td>
+      <td align="center" style="color: green;">✅ 2/2</td>
+      <td align="center">2 images</td>
+    </tr>
+    <tr>
+      <td align="center"><b>FULL UPDATE</b></td>
+      <td align="center">PUT /api/books/{id}</td>
+      <td>• Update all fields successfully ✓</td>
+      <td align="center" style="color: green;">✅ 1/1</td>
+      <td align="center">1 image</td>
+    </tr>
+    <tr>
+      <td align="center"><b>PARTIAL UPDATE</b></td>
+      <td align="center">PATCH /api/books/{id}</td>
+      <td>• Update specific field successfully ✓</td>
+      <td align="center" style="color: green;">✅ 1/1</td>
+      <td align="center">1 image</td>
+    </tr>
+    <tr>
+      <td align="center"><b>DELETE</b></td>
+      <td align="center">DELETE /api/books/{id}</td>
+      <td>• Delete book successfully ✓</td>
+      <td align="center" style="color: green;">✅ 1/1</td>
+      <td align="center">1 image</td>
+    </tr>
+    <tr style="background-color: #f8f8f8;">
+      <td align="center" colspan="2"><b>TOTAL</b></td>
+      <td align="center"><b>12 Test Cases</b></td>
+      <td align="center" style="color: green; font-weight: bold;">✅ 12/12</td>
+      <td align="center"><b>12 Images</b></td>
+    </tr>
+  </table>
+</div>
+
+## 🎯 Test Coverage Overview
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="33%">
+        <h3>📱 Postman</h3>
+        <p><b>12 Test Images</b></p>
+        <p>All API endpoints tested</p>
+      </td>
+      <td align="center" width="33%">
+        <h3>🌐 Swagger UI</h3>
+        <p><b>6 Test Images</b></p>
+        <p>Interactive API documentation</p>
+      </td>
+      <td align="center" width="33%">
+        <h3>✅ Coverage</h3>
+        <p><b>100% Success Rate</b></p>
+        <p>All test cases passed</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <em>🎯 Total <b>18 screenshot images</b> displayed showing comprehensive testing of all API endpoints</em>
 </div>
 
 ### 🧪 Postman Collection
