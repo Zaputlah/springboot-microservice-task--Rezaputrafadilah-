@@ -140,11 +140,10 @@ spring:
 - Click Import
 - Select the provided collection JSON (if included)
 - Set environment variable:
-# text
-- {{baseUrl}} = http://localhost:8081
+
 ## 👨‍💻 Author
-# Reza Putra
-# Backend Developer – Java Spring Boot
+- Reza Putra fadilah
+- Backend Developer – Java Spring Boot
 
 ## 📝 Notes for Reviewer
 - ✅ Consistent API response format (code, message, data)
