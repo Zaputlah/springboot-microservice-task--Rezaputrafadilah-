@@ -7,6 +7,8 @@ import jakarta.validation.constraints.Pattern;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import java.time.LocalDate;
 
 @Entity
@@ -28,6 +30,7 @@ public class Book {
         message = "Author cannot contain numbers"
     )
     @Column(nullable = false)
+    @Schema(type = "string", example = "Author Name not containing digits")
     private String author;
 
     @NotBlank(message = "ISBN is required")
@@ -36,10 +39,12 @@ public class Book {
         message = "ISBN must contain only digits"
     )
     @Column(nullable = false, unique = true)
+    @Schema(type = "string", example = "STRING_OF_DIGITS_ONLY")
     private String isbn;
 
     @NotNull(message = "Published date is required")
     @Column(nullable = false)
+    @Schema(type = "string", example = "YYYY-MM-DD")
     private LocalDate publishedDate;
 
     public Book() {}

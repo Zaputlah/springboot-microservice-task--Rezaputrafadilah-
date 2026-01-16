@@ -134,6 +134,60 @@ spring:
   "data": null
 }
 ```
+
+## 📊 Test Results Gallery
+
+### Postman Results
+
+<div align="center">
+  <table>
+    <tr>
+      <td colspan="3" align="center"><b>CREATE Operations</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/postman/Response_BerhasilCreate.png" width="180" /></td>
+      <td><img src="doc/postman/Response_GagalAuthor.png" width="180" /></td>
+      <td><img src="doc/postman/Response_GagalDate.png" width="180" /></td>
+    </tr>
+    <tr>
+      <td>Success</td>
+      <td>Invalid Author</td>
+      <td>Invalid Date</td>
+    </tr>
+  </table>
+  
+  <table>
+    <tr>
+      <td colspan="2" align="center"><b>READ Operations</b></td>
+    </tr>
+    <tr>
+      <td><img src="doc/postman/Response_AllBook.png" width="250" /></td>
+      <td><img src="doc/postman/Response_BerhasilBookById.png" width="250" /></td>
+    </tr>
+    <tr>
+      <td>Get All Books</td>
+      <td>Get by ID</td>
+    </tr>
+  </table>
+</div>
+
+### Swagger UI Results
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="doc/swagger/Response_AllBook.png" width="200" /></td>
+      <td><img src="doc/swagger/Response_CreateBook.png" width="200" /></td>
+      <td><img src="doc/swagger/Response_UpdateByField.png" width="200" /></td>
+    </tr>
+    <tr>
+      <td>GET All</td>
+      <td>POST Create</td>
+      <td>PATCH Update</td>
+    </tr>
+  </table>
+</div>
+
 ### 🧪 Postman Collection
 - Import Instructions:
 - Open Postman
